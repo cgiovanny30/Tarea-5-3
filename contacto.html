@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Página de contacto creada con estructura HTML5 -->
+    <title>Contacto | Descubre Puerto Rico</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                Descubre Puerto Rico
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="lugares.html">Lugares</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Encabezado -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="fw-bold">Contáctanos</h1>
+            <p class="lead">
+                ¿Tienes alguna pregunta sobre Puerto Rico?
+                Envíanos un mensaje.
+            </p>
+        </div>
+    </header>
+
+
+    <!-- Contenido principal -->
+    <main class="container py-5">
+
+        <section id="seccion-contacto" class="contacto mx-auto">
+
+            <h2 class="text-center mb-4">
+                Formulario de contacto
+            </h2>
+
+            <div class="contact-box">
+
+                <form class="needs-validation" novalidate>
+
+                    <!-- Nombre -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">
+                            Nombre
+                        </label>
+
+                        <input type="text"
+                               class="form-control"
+                               id="nombre"
+                               placeholder="Escribe tu nombre"
+                               required>
+
+                        <div class="invalid-feedback">
+                            Por favor, escribe tu nombre.
+                        </div>
+                    </div>
+
+
+                    <!-- Correo electrónico -->
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">
+                            Correo electrónico
+                        </label>
+
+                        <input type="email"
+                               class="form-control"
+                               id="correo"
+                               placeholder="ejemplo@correo.com"
+                               required>
+
+                        <div class="invalid-feedback">
+                            Escribe un correo electrónico válido.
+                        </div>
+                    </div>
+
+
+                    <!-- Mensaje -->
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">
+                            Mensaje
+                        </label>
+
+                        <textarea class="form-control"
+                                  id="mensaje"
+                                  rows="5"
+                                  placeholder="Escribe tu mensaje"
+                                  required></textarea>
+
+                        <div class="invalid-feedback">
+                            Por favor, escribe un mensaje.
+                        </div>
+                    </div>
+
+
+                    <!-- Botón Bootstrap -->
+                    <button class="btn btn-primary w-100"
+                            type="submit">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Información ficticia -->
+            <div class="text-center mt-5">
+                <h3 class="h5">Información de contacto</h3>
+
+                <p class="mb-1">
+                    Correo: info@descubrepuertorico.com
+                </p>
+
+                <p>
+                    Teléfono: (787) 555-0123
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">
+            &copy; 2026 Descubre Puerto Rico | Proyecto educativo
+        </p>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Validación del formulario -->
+    <script>
+        (() => {
+            'use strict';
+
+            const forms = document.querySelectorAll('.needs-validation');
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+
+                    event.preventDefault();
+
+                    if (!form.checkValidity()) {
+                        event.stopPropagation();
+                    }
+
+                    form.classList.add('was-validated');
+                });
+            });
+        })();
+    </script>
+
+</body>
+</html>

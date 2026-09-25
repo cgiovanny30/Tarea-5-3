@@ -1,0 +1,204 @@
+/* ========================================
+   ESTILOS GENERALES
+======================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+
+/* ========================================
+   BARRA DE NAVEGACIÓN
+======================================== */
+
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-size: 1.05rem;
+}
+
+
+/* ========================================
+   ENCABEZADO PRINCIPAL
+======================================== */
+
+.hero {
+    min-height: 70vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("imagenes/portada.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ========================================
+   SECCIONES
+======================================== */
+
+section h2 {
+    font-weight: bold;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   TARJETAS BOOTSTRAP
+======================================== */
+
+.card {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* ========================================
+   FORMULARIO
+======================================== */
+
+.contacto {
+    max-width: 800px;
+}
+
+
+/* ========================================
+   PIE DE PÁGINA
+======================================== */
+
+footer {
+    margin-top: auto;
+}
+
+
+/* ========================================
+   DISEÑO RESPONSIVO
+======================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 55vh;
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}
+/* ========================================
+   CAJA DEL FORMULARIO
+   Ejemplo del modelo de caja de CSS
+======================================== */
+
+.contact-box {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border: 2px solid #dee2e6;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Selector de ID */
+#seccion-contacto {
+    padding-top: 10px;
+}
+/* ========================================
+   SELECTORES Y MODELO DE CAJA
+======================================== */
+
+/* Selector de elemento */
+h2 {
+    color: #1f2937;
+}
+
+/* Selector de clase */
+.destacado {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Selector de ID */
+#titulo-principal {
+    text-transform: uppercase;
+}
+
+/* Modelo de caja */
+.caja-informacion {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #0d6efd;
+    border-radius: 10px;
+    max-width: 700px;
+    background-color: #f8f9fa;
+}
+/* ========================================
+   PERSONALIZACIÓN TAREA 5-3
+======================================== */
+
+.navbar {
+    border-bottom: 4px solid #ffc107;
+}
+
+.btn-primary {
+    border-radius: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+#titulo-principal {
+    letter-spacing: 2px;
+}

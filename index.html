@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
+    <title>Descubre Puerto Rico</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--
+        BARRA DE NAVEGACIÓN
+        El elemento nav contiene los enlaces principales del sitio.
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                Descubre Puerto Rico
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="lugares.html">
+                            Lugares
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--
+        ENCABEZADO
+        El elemento header presenta el título principal del sitio.
+        La imagen de fondo será aplicada utilizando CSS.
+    -->
+    <header class="hero">
+        <div class="container text-center">
+            <h1 id="titulo-principal" class="display-3 fw-bold">
+    Descubre Puerto Rico
+</h1>
+
+            <p class="lead">
+                Conoce algunos de los lugares, paisajes y tradiciones
+                que hacen única a nuestra isla.
+            </p>
+
+            <a href="lugares.html" class="btn btn-warning btn-lg">
+                Explorar lugares
+            </a>
+        </div>
+    </header>
+
+
+    <!--
+        CONTENIDO PRINCIPAL
+        El elemento main contiene la información más importante
+        de esta página.
+    -->
+    <main>
+
+        <!-- Sección Acerca de mí -->
+        <section class="container py-5">
+            <div class="row align-items-center">
+
+<div class="col-lg-8 mx-auto text-center caja-informacion">
+
+                    <h2 class="mb-4 destacado">
+    Acerca de mí
+</h2>
+
+                    <p>
+                        ¡Hola! Soy Christopher Maldonado, un joven puertorriqueño
+                        apasionado por conocer diferentes lugares de la isla.
+                        Creé este sitio para compartir algunos de los destinos
+                        que considero interesantes para visitar en Puerto Rico.
+                    </p>
+
+                    <p>
+                        Mi objetivo es mostrar parte de nuestra cultura,
+                        naturaleza y belleza mientras practico el desarrollo
+                        de páginas web utilizando HTML, CSS y Bootstrap.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Sección de llamado a la acción -->
+        <section class="bg-light py-5">
+            <div class="container text-center">
+
+                <h2>¿Quieres comunicarte conmigo?</h2>
+
+                <p>
+                    Puedes utilizar nuestra página de contacto para
+                    enviarnos un mensaje.
+                </p>
+
+                <a href="contacto.html" class="btn btn-primary">
+                    Ir a contacto
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--
+        PIE DE PÁGINA
+        El elemento footer contiene información final del sitio.
+    -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">
+            &copy; 2026 Descubre Puerto Rico | Proyecto educativo
+        </p>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
